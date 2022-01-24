@@ -1,5 +1,6 @@
 import React from 'react';
+import NavBar from './components/Navbar/NavBar';
 
-const App = () => <div className="text-blue-700 bg-red-400">Hello</div>;
+const App = () => <NavBar />;
 
 export default App;
