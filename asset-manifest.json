@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/ShadyShawkat/React-Group-Project/static/css/main.4b362daf.css",
+    "main.js": "/ShadyShawkat/React-Group-Project/static/js/main.1215b946.js",
+    "index.html": "/ShadyShawkat/React-Group-Project/index.html",
+    "main.4b362daf.css.map": "/ShadyShawkat/React-Group-Project/static/css/main.4b362daf.css.map",
+    "main.1215b946.js.map": "/ShadyShawkat/React-Group-Project/static/js/main.1215b946.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4b362daf.css",
+    "static/js/main.1215b946.js"
+  ]
+}
