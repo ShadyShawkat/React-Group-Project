@@ -1,8 +1,5 @@
-import React from "react";
-import "./App.module.css";
+import React from 'react';
 
-const App = () => {
-  return <div>Hello</div>;
-};
+const App = () => <div className="text-blue-700 bg-red-400">Hello</div>;
 
 export default App;
