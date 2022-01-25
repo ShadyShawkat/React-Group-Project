@@ -46,7 +46,7 @@
   "description": "![](https://img.shields.io/badge/Microverse-blueviolet)",
   "main": "index.js",
   "devDependencies": {
-    "@babel/core": "^7.16.7",
+    "@babel/core": "^7.16.12",
     "@babel/eslint-parser": "^7.16.5",
     "@babel/plugin-syntax-jsx": "^7.16.7",
     "@babel/preset-react": "^7.16.7",
