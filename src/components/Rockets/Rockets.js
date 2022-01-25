@@ -5,7 +5,7 @@ import RocketItem from '../RocketItem/RocketItem';
 
 const Rockets = () => {
   const rockets = useSelector((state) => state.rockets.rockets);
-  console.log(rockets);
+
   return (
     <ul>
       {rockets.map((rocket) => (
