@@ -10,6 +10,12 @@ const RocketItem = ({ rocket }) => {
       <div className="flex flex-col gap-2 items-start">
         <h3 className="">{name}</h3>
         <p>{description}</p>
+        <button
+          type="button"
+          className="bg-sky-600 text-white rounded-sm px-2 py-1 hover:bg-sky-800"
+        >
+          Reserve Rocket
+        </button>
       </div>
     </>
   );
