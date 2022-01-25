@@ -6,9 +6,9 @@ const RocketItem = ({ rocket }) => {
 
   return (
     <>
-      <img src={imageSrc} alt="rocket" />
-      <div>
-        <h3>{name}</h3>
+      <img src={imageSrc} alt="rocket" className="w-48 rounded-md" />
+      <div className="flex flex-col gap-2 items-start">
+        <h3 className="">{name}</h3>
         <p>{description}</p>
       </div>
     </>
