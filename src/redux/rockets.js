@@ -13,6 +13,7 @@ const rocketsSlice = createSlice({
         name: rocket.rocket_name,
         type: rocket.rocket_type,
         imageSrc: rocket.flickr_images[0],
+        description: rocket.description,
       }));
     },
   },

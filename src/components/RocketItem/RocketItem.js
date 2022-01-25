@@ -2,12 +2,15 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 const RocketItem = ({ rocket }) => {
-  const { name, imageSrc } = rocket;
+  const { name, imageSrc, description } = rocket;
 
   return (
     <>
       <img src={imageSrc} alt="rocket" />
-      <div>{name}</div>
+      <div>
+        <h3>{name}</h3>
+        <p>{description}</p>
+      </div>
     </>
   );
 };
@@ -18,6 +21,7 @@ RocketItem.propTypes = {
     name: PropTypes.string.isRequired,
     type: PropTypes.string.isRequired,
     imageSrc: PropTypes.string.isRequired,
+    description: PropTypes.string.isRequired,
   }).isRequired,
 };
 
