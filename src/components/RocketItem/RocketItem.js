@@ -6,7 +6,7 @@ const RocketItem = ({ rocket }) => {
 
   return (
     <>
-      <div className="w-48 h-48 rounded-md overflow-hidden flex flex-shrink-0 flex-grow-0 self-center">
+      <div className="md:w-48 md:h-48 w-32 h-32 rounded-md overflow-hidden flex flex-shrink-0 flex-grow-0 self-center">
         <img src={imageSrc} alt="rocket" />
       </div>
       <div className="flex flex-col items-start">
