@@ -78,3 +78,7 @@ select {
     scroll-behavior: auto !important;
   }
 }
+
+.active {
+  color: #3b82f6;
+}
