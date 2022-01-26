@@ -1,11 +1,19 @@
 /* eslint-disable camelcase */
 import React from 'react';
 import PropTypes from 'prop-types';
+import { useDispatch } from 'react-redux';
+import { toggleMission } from '../../redux/missions/missions';
 
 const MissionItem = ({ mission }) => {
   const {
     mission_name, mission_id, description, reserved,
   } = mission;
+
+  const dispatch = useDispatch();
+
+  const handleClick = (id) => {
+    dispatch(toggleMission(id));
+  };
 
   return (
 
@@ -25,12 +33,21 @@ const MissionItem = ({ mission }) => {
         </div>
       </td>
       <td className="px-6 py-4">
-        <p className="px-2 inline-flex text-xs leading-5 font-semibold rounded bg-gray-300 text-grey-800">
-          {!reserved && 'NOT A MEMBER'}
+        <p className={!reserved ? 'px-2 inline-flex text-xs leading-5 font-semibold rounded bg-gray-300 text-grey-800' : 'px-2 inline-flex text-xs leading-5 font-semibold rounded bg-blue-500 text-white'}>
+          {!reserved ? 'NOT A MEMBER' : 'MEMBER'}
         </p>
       </td>
       <td className="px-6 py-4 text-right text-sm font-medium">
-        <button className="bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow" type="button">Join Mission</button>
+        <button
+          className={(reserved)
+            ? 'bg-white hover:bg-gray-100 text-red-800 font-semibold py-2 px-4 border border-red-400 rounded shadow'
+            : 'bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow'}
+          type="button"
+          onClick={() => handleClick(mission_id)}
+        >
+          {(reserved) ? 'Leave Mission' : 'Join Mission'}
+        </button>
+
       </td>
     </tr>
   );
