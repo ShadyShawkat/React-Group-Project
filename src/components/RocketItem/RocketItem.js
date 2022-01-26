@@ -19,6 +19,11 @@ const RocketItem = ({ rocket }) => {
   return (
     <>
       <div className="md:w-48 md:h-48 w-32 h-32 rounded-md overflow-hidden flex flex-shrink-0 flex-grow-0 self-center relative border-2">
+        {reserved && (
+          <div className="w-28 h-14 absolute -top-5 -right-6 bg-white rounded-full text-black font-bold text-md pt-6 pl-3 select-none">
+            Reserved
+          </div>
+        )}
         <img src={imageSrc} alt="rocket" />
       </div>
       <div className="flex flex-col items-start">
