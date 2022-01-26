@@ -82,3 +82,7 @@ select {
 .active {
   color: #3b82f6;
 }
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
