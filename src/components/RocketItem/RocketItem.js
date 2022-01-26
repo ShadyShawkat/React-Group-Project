@@ -1,8 +1,18 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { useDispatch } from 'react-redux';
+
+import { rocketsActions } from '../../redux/rockets/rockets';
 
 const RocketItem = ({ rocket }) => {
-  const { name, imageSrc, description } = rocket;
+  const {
+    id, name, imageSrc, description,
+  } = rocket;
+  const dispatch = useDispatch();
+
+  const toggleReservationHandler = () => {
+    dispatch(rocketsActions.reserveRocket(id));
+  };
 
   return (
     <>
@@ -15,6 +25,7 @@ const RocketItem = ({ rocket }) => {
         <button
           type="button"
           className="bg-sky-600 text-white rounded-sm px-2 py-1 hover:bg-sky-800 mt-auto"
+          onClick={toggleReservationHandler}
         >
           Reserve Rocket
         </button>
