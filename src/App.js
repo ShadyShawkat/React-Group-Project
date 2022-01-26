@@ -6,7 +6,7 @@ import Missions from './components/Missions/Missions';
 import NavBar from './components/Navbar/NavBar';
 import Rockets from './components/Rockets/Rockets';
 import Profile from './components/Profile/Profile';
-import { fetchRockets } from './redux/rockets';
+import { fetchRockets } from './redux/rockets/rockets';
 import { getMissions } from './redux/missions/missions';
 
 const App = () => {
