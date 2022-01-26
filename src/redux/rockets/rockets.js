@@ -14,7 +14,16 @@ const rocketsSlice = createSlice({
         type: rocket.rocket_type,
         imageSrc: rocket.flickr_images[0],
         description: rocket.description,
+        reserved: false,
       }));
+    },
+    reserveRocket(state, action) {
+      state.rockets = state.rockets.map((rocket) => (rocket.id === action.payload
+        ? {
+          ...rocket,
+          reserved: true,
+        }
+        : rocket));
     },
   },
 });
