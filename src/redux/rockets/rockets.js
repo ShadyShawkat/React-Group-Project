@@ -17,11 +17,11 @@ const rocketsSlice = createSlice({
         reserved: false,
       }));
     },
-    reserveRocket(state, action) {
+    toggleRocket(state, action) {
       state.rockets = state.rockets.map((rocket) => (rocket.id === action.payload
         ? {
           ...rocket,
-          reserved: true,
+          reserved: !rocket.reserved,
         }
         : rocket));
     },
