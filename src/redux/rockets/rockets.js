@@ -1,6 +1,6 @@
 /* eslint-disable no-param-reassign */
 import { createSlice } from '@reduxjs/toolkit';
-import API from './API/rockets';
+import API from '../API/rockets';
 
 const rocketsSlice = createSlice({
   name: 'rockets',
@@ -14,7 +14,16 @@ const rocketsSlice = createSlice({
         type: rocket.rocket_type,
         imageSrc: rocket.flickr_images[0],
         description: rocket.description,
+        reserved: false,
       }));
+    },
+    toggleRocket(state, action) {
+      state.rockets = state.rockets.map((rocket) => (rocket.id === action.payload
+        ? {
+          ...rocket,
+          reserved: !rocket.reserved,
+        }
+        : rocket));
     },
   },
 });
