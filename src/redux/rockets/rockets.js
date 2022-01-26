@@ -1,6 +1,6 @@
 /* eslint-disable no-param-reassign */
 import { createSlice } from '@reduxjs/toolkit';
-import API from './API/rockets';
+import API from '../API/rockets';
 
 const rocketsSlice = createSlice({
   name: 'rockets',
