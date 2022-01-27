@@ -4,7 +4,9 @@ import { useSelector } from 'react-redux';
 // import PropTypes from 'prop-types';
 
 const Profile = () => {
-  const rockets = useSelector((state) => state.rockets.rockets.filter((rocket) => rocket.reserved));
+  const rockets = useSelector((state) =>
+    state.rockets.rockets.filter((rocket) => rocket.reserved),
+  );
   const missions = useSelector((state) => {
     const { missions } = state.missions;
     return missions.filter((missions) => missions.reserved);
@@ -21,7 +23,11 @@ const Profile = () => {
         {missions.length > 0 && (
           <ul className="flex flex-col mt-3 border-2 divide-y-2 divide-slate-300 rounded-md border-slate-400">
             {missions.map((missions) => (
-              <li key={missions.mission_id} className="p-2 flex gap-5 items-center">
+              <li
+                data-testid="reservedMissionItem"
+                key={missions.mission_id}
+                className="p-2 flex gap-5 items-center"
+              >
                 <p>{missions.mission_name}</p>
               </li>
             ))}
@@ -38,7 +44,11 @@ const Profile = () => {
         {rockets.length > 0 && (
           <ul className="flex flex-col mt-3 border-2 divide-y-2 divide-slate-300 rounded-md border-slate-400">
             {rockets.map((rocket) => (
-              <li key={rocket.id} className="p-2 flex gap-5 items-center">
+              <li
+                key={rocket.id}
+                className="p-2 flex gap-5 items-center"
+                data-testid="reservedRocketItem"
+              >
                 <img
                   src={rocket.imageSrc}
                   className="w-8 h-8 rounded-sm"
