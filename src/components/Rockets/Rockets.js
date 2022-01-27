@@ -12,6 +12,7 @@ const Rockets = () => {
         <li
           key={rocket.id}
           className="flex gap-6 bg-white pl-2 pr-5 py-3 rounded-lg"
+          data-testid="rocketItem"
         >
           <RocketItem rocket={rocket} />
         </li>
