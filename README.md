@@ -5,7 +5,7 @@
 > This website allows you to reserve flight for missions and rockets into space using SpaceX's API. Built using react, redux, redux-toolkit, and Tailwind
 
 ### Screenshot
-![screenshot](./app_screenshot.png)
+![screenshot](./app-gif.gif)
 
 ## Built With
 
@@ -15,7 +15,7 @@
 
 ## Live Demo
 
-[Check here the Live Demo!]()
+[Check here the Live Demo!](https://space-travlers-hub-55.netlify.app/)
 
 ### Prerequisites
 
@@ -27,8 +27,8 @@
 ### Setup
 
 1. Open a command line
-2. Clone the project to your computer with `git clone git@github.com:ShadyShawkat/[name].git`
-3. Go into the folder to the project with `cd [name]`
+2. Clone the project to your computer with `git clone git@github.com:ShadyShawkat/React-Group-Project.git`
+3. Go into the folder to the project with `cd React-Group-Project`
 4. Build the node modules with `npm install`. 
 
 ### Usage
