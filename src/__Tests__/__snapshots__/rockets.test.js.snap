@@ -1,0 +1,130 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing rockets render Tests Rockets.js component render 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <ul
+        class="flex flex-col gap-4 mt-16"
+      >
+        <li
+          class="flex gap-6 bg-white pl-2 pr-5 py-3 rounded-lg"
+          data-testid="rocketItem"
+        >
+          <div
+            class="md:w-48 md:h-48 w-32 h-32 rounded-md overflow-hidden flex flex-shrink-0 flex-grow-0 self-center relative border-2"
+          >
+            <img
+              alt="rocket"
+            />
+          </div>
+          <div
+            class="flex flex-col items-start"
+          >
+            <h3
+              class="text-xl font-bold"
+            />
+            <p>
+              Rocket 1
+            </p>
+            <button
+              class="px-2 py-1 mt-auto rounded-md font-medium bg-sky-600 text-white hover:bg-sky-800"
+              data-testid="toggleReservationBtn"
+              type="button"
+            >
+              Reserve Rocket
+            </button>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </body>,
+  "container": <div>
+    <ul
+      class="flex flex-col gap-4 mt-16"
+    >
+      <li
+        class="flex gap-6 bg-white pl-2 pr-5 py-3 rounded-lg"
+        data-testid="rocketItem"
+      >
+        <div
+          class="md:w-48 md:h-48 w-32 h-32 rounded-md overflow-hidden flex flex-shrink-0 flex-grow-0 self-center relative border-2"
+        >
+          <img
+            alt="rocket"
+          />
+        </div>
+        <div
+          class="flex flex-col items-start"
+        >
+          <h3
+            class="text-xl font-bold"
+          />
+          <p>
+            Rocket 1
+          </p>
+          <button
+            class="px-2 py-1 mt-auto rounded-md font-medium bg-sky-600 text-white hover:bg-sky-800"
+            data-testid="toggleReservationBtn"
+            type="button"
+          >
+            Reserve Rocket
+          </button>
+        </div>
+      </li>
+    </ul>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
