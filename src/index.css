@@ -81,6 +81,7 @@ select {
 
 .active {
   color: #3b82f6;
+  text-decoration: underline;
 }
 
 tr:nth-child(even) {
