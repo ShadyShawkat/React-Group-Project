@@ -2,7 +2,7 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 
 const NavBar = () => (
-  <nav className="flex px-6 py-3 bg-white items-center border-b border-b-gray-300 fixed top-0 w-screen">
+  <nav className="flex px-6 py-3 bg-white items-center border-b border-b-gray-300 fixed top-0 w-screen z-10">
     <h1 className="font-bold text-2xl hidden sm:block">
       Space Travelers&apos; Hub
     </h1>
