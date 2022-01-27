@@ -4,9 +4,7 @@ import { useSelector } from 'react-redux';
 // import PropTypes from 'prop-types';
 
 const Profile = () => {
-  const rockets = useSelector((state) =>
-    state.rockets.rockets.filter((rocket) => rocket.reserved),
-  );
+  const rockets = useSelector((state) => state.rockets.rockets.filter((rocket) => rocket.reserved));
   const missions = useSelector((state) => {
     const { missions } = state.missions;
     return missions.filter((missions) => missions.reserved);
