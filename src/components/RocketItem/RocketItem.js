@@ -5,11 +5,12 @@ import { useDispatch } from 'react-redux';
 import { rocketsActions } from '../../redux/rockets/rockets';
 
 const reserveBtnClasses = 'bg-sky-600 text-white hover:bg-sky-800';
-const cancelReservationBtnClasses =
-  'bg-gray-200 text-black hover:bg-gray-300 border-red-600 border-2';
+const cancelReservationBtnClasses = 'bg-gray-200 text-black hover:bg-gray-300 border-red-600 border-2';
 
 const RocketItem = ({ rocket }) => {
-  const { id, name, imageSrc, description, reserved } = rocket;
+  const {
+    id, name, imageSrc, description, reserved,
+  } = rocket;
   const dispatch = useDispatch();
 
   const toggleReservationHandler = () => {
