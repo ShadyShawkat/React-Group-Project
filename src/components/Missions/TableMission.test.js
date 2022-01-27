@@ -7,8 +7,6 @@ import store from '../../redux/store'
 
 
 
-const tableMission = () =>{ 
-}
 
 describe('Test TableMission render', () => {
   test('Test TableMission', () => {
