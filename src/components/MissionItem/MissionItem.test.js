@@ -32,23 +32,23 @@ const mockObj = () => {
   );
 };
 
-describe('Test TableMission render', () => {
-  test('Test TableMission', () => {
+describe('Test MissionItems render', () => {
+  test('Test Mission name', () => {
     mockObj();
     expect(screen.getByText('Thaicom')).toBeInTheDocument();
   });
 
-  test('Test TableMission', () => {
+  test('Test Mission description', () => {
     mockObj();
     expect(screen.getByText(missions[0].description)).toBeInTheDocument();
   });
 
-  test('Test TableMission', () => {
+  test('Test Mission join button', () => {
     mockObj();
     expect(screen.getByRole('button')).toHaveTextContent('Join Mission');
   });
 
-  test('Test TableMission', () => {
+  test('Test Mission leave button', () => {
     handleReserv();
     mockObj();
     expect(screen.getByRole('button')).toHaveTextContent('Leave Mission');
