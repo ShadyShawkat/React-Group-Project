@@ -6,7 +6,7 @@ import TableMission from './TableMission';
 import store from '../../redux/store';
 
 describe('Test TableMission render', () => {
-  test('Test TableMission', () => {
+  test('Test TableMission tHead Mission', () => {
     render(
       <Provider store={store}>
         <TableMission />
@@ -15,7 +15,7 @@ describe('Test TableMission render', () => {
     expect(screen.getByText('Mission')).toBeInTheDocument();
   });
 
-  test('Test TableMission', () => {
+  test('Test TableMission Description Mission', () => {
     render(
       <Provider store={store}>
         <TableMission />
@@ -24,7 +24,7 @@ describe('Test TableMission render', () => {
     expect(screen.getByText('Description')).toBeInTheDocument();
   });
 
-  test('Test TableMission', () => {
+  test('Test TableMission Status', () => {
     render(
       <Provider store={store}>
         <TableMission />
